@@ -9,3 +9,4 @@
 9. Eduardo Neri Acevedo Vivas - 2026/09/17
 10. Luis Eduardo Vadillo Rojas - 2026/09/17
 11. Christian Eduardo Garibay Herrera - 2026/09/17
+12. Diego Emiliano Gallardo Tinoco - 2026/09/17
