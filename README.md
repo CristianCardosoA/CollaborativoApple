@@ -4,3 +4,4 @@
 4. Daniela Lopez
 5.Luis Lino
 6. Tonatiuh Perez
+7. Juan Perez
