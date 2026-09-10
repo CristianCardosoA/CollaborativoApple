@@ -1,3 +1,3 @@
 1. Cristian Cardoso
 2. Eduardo Sanchez
-9. Lisset Huerta Patiño
+6. Lisset Huerta Patiño
