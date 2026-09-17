@@ -1,8 +1,5 @@
-1. Cristian Cardoso
-2. Eduardo Sanchez
-3. Dana Reyes
-4. Daniela Lopez
-5. Luis Lino
-6. Tonatiuh Perez
-7. Diego Gallardo
-8. Lisset Huerta
+1.Cristian Cardoso
+2.Daniela Fernanda Lopez Barron - 17 de Septiembre de 2026
+3.Carlos Tonatiuh Pérez Delgado - 17/09/2026
+4.Lino Revilla Luis Alberto - 2026/09/17
+5.Lisset Huerta Patiño - 17-09-2026
