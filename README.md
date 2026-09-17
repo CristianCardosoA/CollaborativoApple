@@ -7,4 +7,3 @@
 7. Cardoso Silva Brenda Yaretzi - 2026/09/17
 8. Emmanuel Tello Saldivar - 2026/09/17
 9. Eduardo Neri Acevedo Vivas - 2026/09/17
-10. Diego Emiliano Gallardo Tinoco - 2026/09/17
