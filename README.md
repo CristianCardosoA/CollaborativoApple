@@ -6,3 +6,4 @@
 6. Lisset Huerta Patiño - 2026/09/17
 7. Cardoso Silva Brenda Yaretzi - 2026/09/17
 8. Emmanuel Tello Saldivar - 2026/09/17
+9. Vadillo Rojas Luis Eduardo - 2026/09/17
