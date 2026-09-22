@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var ingreseNombre: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
