@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func greetButton(_ sender: Any) {
-        let name = nameText.text ?? "World"
+        let name = nameText.text!
         text.text = "Hello, \(name)"
     }
 }
