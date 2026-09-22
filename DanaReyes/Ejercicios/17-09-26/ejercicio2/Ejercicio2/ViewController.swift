@@ -8,8 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var CajaTexto: UITextField!
-    @IBOutlet weak var NameLabel: UILabel!
+    @IBOutlet weak var cajaTexto: UITextField!
+    @IBOutlet weak var nameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     @IBAction func greetButtonTap(_ sender: Any) {
         
-        NameLabel.text = "Hola \(CajaTexto.text ?? "")"
+        nameLabel.text = "Hola \(cajaTexto.text ?? "")"
     }
 }
 
