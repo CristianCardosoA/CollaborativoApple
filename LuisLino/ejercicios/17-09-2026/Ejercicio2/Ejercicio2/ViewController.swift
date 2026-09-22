@@ -8,11 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var ingreseNombre: UILabel!
+    @IBOutlet weak var ingreseNombre: UITextField!
+    @IBOutlet weak var hola: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+    }
+    
+    @IBAction func Greet(_ sender: UIButton){
+        hola.text="Hola " + ingreseNombre.text!
     }
 
 
