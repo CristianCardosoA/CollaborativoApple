@@ -8,14 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
-    @IBAction func greetButtonCap(_ sender: Any) {
+    @IBOutlet weak var text: UILabel!
+    
+    @IBOutlet weak var nameText: UITextField!
+    
+    
+    @IBAction func greetButton(_ sender: Any) {
+        let name = nameText.text ?? "World"
+        text.text = "Hello, \(name)"
     }
 }
 
