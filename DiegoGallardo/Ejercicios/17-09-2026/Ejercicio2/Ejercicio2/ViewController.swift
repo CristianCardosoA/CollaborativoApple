@@ -8,8 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,18 +15,12 @@ class ViewController: UIViewController {
     }
 
     @IBOutlet weak var labelText: UILabel!
-    
-    
     @IBOutlet weak var nametext: UITextField!
     
     @IBAction func greetButtonCap(_ sender: Any) {
-        let nombre = nametext.text!
+        let nombre = nametext.text ?? ""
         
-        if nombre.isEmpty {
-            labelText.text = "Por favor, ingrese su nombre"
-        } else {
-            labelText.text = "¡Hola, \(nombre.capitalized)!"
-        }
+            labelText.text = "¡Hola, \(nombre)!"
     }
 }
 
