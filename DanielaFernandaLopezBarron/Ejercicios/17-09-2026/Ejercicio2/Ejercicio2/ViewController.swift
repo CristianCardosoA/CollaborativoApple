@@ -11,9 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
 
-    
     @IBOutlet weak var nameLabel: UILabel!
-
     
     @IBAction func greetButtonTapped(_ sender: Any) {
         nameLabel.text = nameTextField.text
