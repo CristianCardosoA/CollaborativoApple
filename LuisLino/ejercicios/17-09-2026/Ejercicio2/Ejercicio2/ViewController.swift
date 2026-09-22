@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Greet(_ sender: UIButton){
-        hola.text="Hola" + (ingreseNombre.text ?? "")
+        hola.text="Hola " + (ingreseNombre.text ?? "")
     }
 
 
