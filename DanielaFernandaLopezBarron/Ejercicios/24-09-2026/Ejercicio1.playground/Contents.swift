@@ -16,8 +16,8 @@ for (index, letter) in alphabet.enumerated() {
 let statesAndCapitals: [String: String] = [
     "Virginia": "Richmond",
     "Utah": "Salt Lake City",
-    "New York": "Albany"
-]git status
+    "New York": "Albany"]
+
 for (state, capital) in statesAndCapitals {
     print("The capital of \(state) is \(capital).")
 }
