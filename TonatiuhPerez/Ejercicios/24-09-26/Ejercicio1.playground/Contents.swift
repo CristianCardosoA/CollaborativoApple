@@ -30,3 +30,16 @@ let estados: [String : String] = [
 for (estado, capital) in estados{
     print("La capital de \(estado) es \(capital)")
 }
+
+let parejas = Array(estados)
+
+var i = 0
+
+while i < parejas.count {
+    let estado = parejas[i].key
+    let capital = parejas[i].value
+    
+    print(("La capital de \(estado) es \(capital)."))
+    
+    i += 1
+}
