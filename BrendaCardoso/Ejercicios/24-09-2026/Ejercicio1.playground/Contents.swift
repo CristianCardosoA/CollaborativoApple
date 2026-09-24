@@ -3,8 +3,8 @@ import UIKit
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 
-for character in alphabet {
-    print(character)
+for(index, letter) in alphabet.enumerated() {
+    print(letter)
 }
 
 
@@ -26,11 +26,23 @@ let statesAndCapitals: [String: String] = [
 ]
 
 for (state, capital) in statesAndCapitals {
-    print("La capital de \(state) es \(capital).")
+    print("Estado: \(state) Capital: \(capital).")
 }
 
-var iterator = statesAndCapitals.makeIterator()
+var pairs = statesAndCapitals.enumerated().makeIterator()
 
-while let (state, capital) = iterator.next() {
-    print("Estado: \(state), Capital: \(capital)")
+while let pair = pairs.next() {
+    print("Estado: \(pair.element.key) Capital: \(pair.element.value).")
+}
+
+
+
+for index in 1...100 {
+    print(index)
+}
+
+var i = 1
+while i <= 100 {
+    print(i)
+    i += 1
 }
