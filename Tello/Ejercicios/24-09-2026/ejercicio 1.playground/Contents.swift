@@ -23,13 +23,37 @@ for (estados) in statesAndCapitals {
     print(estados)
 }
 
-var numero = 1
+
+var index = 1
+
+while index <= 100 {
+    
+    print(index)
+    index += 1
+}
+
+
+
+var letra = 0
 let letras = Array(alphabet)
 
-while numero <= 26 {
-    print("\(numero) : \(letras[numero - 1])")
-    numero += 1
+while letra < letras.count {
+    
+    print(letras[letra])
+    letra += 1
 }
+
+
+
+var estado = 0
+let estados = Array(statesAndCapitals)
+
+while estado < estados.count {
+    
+    print(estados[estado])
+    estado += 1
+}
+
 
 
     
