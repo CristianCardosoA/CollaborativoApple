@@ -16,4 +16,3 @@ class ViewController: UIViewController {
         hola.text="Hola " + (ingreseNombre.text ?? "")
     }
 }
-
