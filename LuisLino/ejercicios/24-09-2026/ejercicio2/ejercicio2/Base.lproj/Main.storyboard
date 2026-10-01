@@ -32,87 +32,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="OBH-e1-69U">
-                                <rect key="frame" x="0.0" y="172" width="393" height="629.66666666666663"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OBH-e1-69U">
+                                <rect key="frame" x="0.0" y="172" width="393" height="568"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jJ-5G-X9U">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="126"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="126" id="EhU-pZ-imu"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="113.66666666666667"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="A"/>
-                                        <connections>
-                                            <segue destination="W2L-1Q-VMC" kind="show" identifier="segueA" id="roA-KJ-sdc"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIg-zk-IoI">
-                                        <rect key="frame" x="0.0" y="126" width="393" height="126"/>
+                                        <rect key="frame" x="0.0" y="113.66666666666669" width="393" height="113.66666666666669"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="B"/>
-                                        <connections>
-                                            <segue destination="W2L-1Q-VMC" kind="presentation" identifier="segueB" id="hRr-Zf-R4a"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pw8-gX-est">
-                                        <rect key="frame" x="0.0" y="251.99999999999997" width="393" height="125.66666666666666"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="125.66666666666666" id="wQp-xz-xrE"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="227.33333333333334" width="393" height="113.33333333333334"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="C"/>
-                                        <connections>
-                                            <segue destination="W2L-1Q-VMC" kind="show" identifier="segueC" id="hd0-sX-FKn"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUb-O7-eWh">
-                                        <rect key="frame" x="0.0" y="377.66666666666663" width="393" height="126"/>
+                                        <rect key="frame" x="0.0" y="340.66666666666663" width="393" height="113.66666666666669"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="D"/>
-                                        <connections>
-                                            <segue destination="W2L-1Q-VMC" kind="presentation" identifier="segueD" id="691-sn-6Ve"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5O-uY-QmU">
-                                        <rect key="frame" x="0.0" y="503.66666666666663" width="393" height="126"/>
+                                        <rect key="frame" x="0.0" y="454.33333333333337" width="393" height="113.66666666666663"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="E"/>
-                                        <connections>
-                                            <segue destination="W2L-1Q-VMC" kind="show" identifier="segueE" id="5kW-UN-YDG"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1248350273" green="0.50612807800000004" blue="0.28204119820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstItem="pw8-gX-est" firstAttribute="centerY" secondItem="OBH-e1-69U" secondAttribute="centerY" id="jkm-lx-Rcf"/>
-                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlE-Cv-tGv">
-                                <rect key="frame" x="16" y="801.66666666666663" width="361" height="34.333333333333371"/>
+                                <rect key="frame" x="133" y="740" width="127.66666666666669" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xEl-9q-c73"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Agregar Letra"/>
                                 <connections>
-                                    <action selector="agregarLetraPresionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T3x-py-nBV"/>
+                                    <action selector="agregarBoton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nFh-uB-fLW"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xlE-Cv-tGv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="2t0-Ut-fE6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xlE-Cv-tGv" secondAttribute="bottom" id="1W2-eQ-Ou9"/>
+                            <constraint firstItem="xlE-Cv-tGv" firstAttribute="top" secondItem="OBH-e1-69U" secondAttribute="bottom" id="3aq-L7-HGb"/>
                             <constraint firstItem="OBH-e1-69U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BON-dD-cbP"/>
-                            <constraint firstItem="OBH-e1-69U" firstAttribute="bottom" secondItem="xlE-Cv-tGv" secondAttribute="top" id="Ei9-tr-egD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OBH-e1-69U" secondAttribute="trailing" id="bPy-iH-Fq7"/>
-                            <constraint firstItem="xlE-Cv-tGv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="629.66666666666652" id="bcX-vm-UCJ"/>
-                            <constraint firstAttribute="bottom" secondItem="xlE-Cv-tGv" secondAttribute="bottom" constant="16" id="szB-dL-kFb"/>
+                            <constraint firstItem="xlE-Cv-tGv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="i8c-mx-7zL"/>
                             <constraint firstItem="OBH-e1-69U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vVT-0Z-lTv"/>
-                            <constraint firstAttribute="trailing" secondItem="xlE-Cv-tGv" secondAttribute="trailing" constant="16" id="xzl-sO-Gnf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vcq-VG-sTk"/>
                     <connections>
                         <outlet property="stackView" destination="OBH-e1-69U" id="rs8-Ih-Tft"/>
-                        <segue destination="W2L-1Q-VMC" kind="show" identifier="segueDetalle" id="gcs-HS-Lnv"/>
+                        <segue destination="W2L-1Q-VMC" kind="show" identifier="segueA" id="III-vb-giD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -122,7 +99,7 @@
         <!--View Controller Detalle-->
         <scene sceneID="pkd-hL-LGn">
             <objects>
-                <viewController id="W2L-1Q-VMC" customClass="ViewControllerDetalle" sceneMemberID="viewController">
+                <viewController id="W2L-1Q-VMC" customClass="ViewControllerDetalle" customModule="ejercicio2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="COu-ED-hxp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,18 +127,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qGI-3H-qk6"/>
-                    <connections>
-                        <outlet property="labelDetalle" destination="9yo-pm-FBe" id="8OH-zA-Z9e"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWV-m5-4yJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="780.91603053435108" y="79.577464788732399"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="gcs-HS-Lnv"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
