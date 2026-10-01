@@ -40,7 +40,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="A"/>
                                         <connections>
-                                            <segue destination="zdY-70-XuY" kind="show" id="Tyn-ns-cVV"/>
+                                            <segue destination="zdY-70-XuY" kind="show" identifier="segueA" id="Tyn-ns-cVV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fz-is-nIQ">
@@ -48,7 +48,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="B"/>
                                         <connections>
-                                            <segue destination="zdY-70-XuY" kind="presentation" id="cyY-r1-z3M"/>
+                                            <segue destination="zdY-70-XuY" kind="presentation" identifier="segueB" id="cyY-r1-z3M"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkV-Tn-Oti">
@@ -56,7 +56,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="C"/>
                                         <connections>
-                                            <segue destination="zdY-70-XuY" kind="show" id="jAW-ZG-feo"/>
+                                            <segue destination="zdY-70-XuY" kind="show" identifier="segueC" id="jAW-ZG-feo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBH-3Y-iyD">
@@ -64,32 +64,46 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="D"/>
                                         <connections>
-                                            <segue destination="zdY-70-XuY" kind="showDetail" id="upp-Dj-dVt"/>
+                                            <segue destination="zdY-70-XuY" kind="showDetail" identifier="segueD" id="upp-Dj-dVt"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utQ-aG-HrQ">
+                                <rect key="frame" x="165" y="801.66666666666663" width="75" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="onAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eze-e7-FuS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="utQ-aG-HrQ" secondAttribute="bottom" constant="16" id="7tg-Hc-DGF"/>
                             <constraint firstItem="MxC-9F-083" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AMh-KG-3h6"/>
                             <constraint firstItem="MxC-9F-083" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Asa-jg-yt0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MxC-9F-083" secondAttribute="bottom" id="Eqv-Uw-k7U"/>
+                            <constraint firstAttribute="trailing" secondItem="utQ-aG-HrQ" secondAttribute="trailing" constant="153" id="Je8-IU-Xtl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MxC-9F-083" secondAttribute="trailing" id="l98-vR-Edo"/>
+                            <constraint firstItem="utQ-aG-HrQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="165" id="mez-dq-AnZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tOA-dP-mkK"/>
+                    <connections>
+                        <outlet property="stackLabels" destination="MxC-9F-083" id="T9p-Ba-UVk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-282" y="103"/>
         </scene>
-        <!--View Controller-->
+        <!--View ControllerDetalle-->
         <scene sceneID="3qe-6W-naF">
             <objects>
-                <viewController id="zdY-70-XuY" sceneMemberID="viewController">
+                <viewController id="zdY-70-XuY" userLabel="View ControllerDetalle" customClass="ViewControllerDetalle" customModule="Ejercicio_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JeM-J8-Oii">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,6 +125,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IOT-7O-C1Y"/>
+                    <connections>
+                        <outlet property="labelDetalle" destination="7dF-MK-MXT" id="5hG-dZ-7cB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Zx-EL-aZk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,7 +135,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="upp-Dj-dVt"/>
+        <segue reference="cyY-r1-z3M"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
