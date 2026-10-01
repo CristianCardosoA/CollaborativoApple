@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Ejercicio2
 //
-//  Created by Dana Gisel Reyes López on 24/09/26.
+//  Created by Facultad de Contaduría y Administración on 24/09/26.
 //
 
 import UIKit

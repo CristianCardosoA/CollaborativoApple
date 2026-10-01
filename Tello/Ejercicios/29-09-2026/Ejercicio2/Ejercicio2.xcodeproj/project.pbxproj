@@ -3,28 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 110;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXFileReference section */
-		595880AF3065BF1400AFEEAD /* Ejercicio2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ejercicio2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29D612F3065BFC100C5F7BE /* Ejercicio2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ejercicio2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		595880C13065BF1600AFEEAD /* Exceptions for "Ejercicio2" folder in "Ejercicio2" target */ = {
+		A29D61413065BFC300C5F7BE /* Exceptions for "Ejercicio2" folder in "Ejercicio2" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 595880AE3065BF1400AFEEAD /* Ejercicio2 */;
+			target = A29D612E3065BFC100C5F7BE /* Ejercicio2 */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		595880B13065BF1400AFEEAD /* Ejercicio2 */ = {
+		A29D61313065BFC100C5F7BE /* Ejercicio2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				595880C13065BF1600AFEEAD /* Exceptions for "Ejercicio2" folder in "Ejercicio2" target */,
+				A29D61413065BFC300C5F7BE /* Exceptions for "Ejercicio2" folder in "Ejercicio2" target */,
 			);
 			path = Ejercicio2;
 			sourceTree = "<group>";
@@ -32,26 +32,28 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		595880AC3065BF1400AFEEAD /* Frameworks */ = {
+		A29D612C3065BFC100C5F7BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		595880A63065BF1400AFEEAD = {
+		A29D61263065BFC100C5F7BE = {
 			isa = PBXGroup;
 			children = (
-				595880B13065BF1400AFEEAD /* Ejercicio2 */,
-				595880B03065BF1400AFEEAD /* Products */,
+				A29D61313065BFC100C5F7BE /* Ejercicio2 */,
+				A29D61303065BFC100C5F7BE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		595880B03065BF1400AFEEAD /* Products */ = {
+		A29D61303065BFC100C5F7BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				595880AF3065BF1400AFEEAD /* Ejercicio2.app */,
+				A29D612F3065BFC100C5F7BE /* Ejercicio2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,76 +61,84 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		595880AE3065BF1400AFEEAD /* Ejercicio2 */ = {
+		A29D612E3065BFC100C5F7BE /* Ejercicio2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 595880C23065BF1600AFEEAD /* Build configuration list for PBXNativeTarget "Ejercicio2" */;
+			buildConfigurationList = A29D61423065BFC300C5F7BE /* Build configuration list for PBXNativeTarget "Ejercicio2" */;
 			buildPhases = (
-				595880AB3065BF1400AFEEAD /* Sources */,
-				595880AC3065BF1400AFEEAD /* Frameworks */,
-				595880AD3065BF1400AFEEAD /* Resources */,
+				A29D612B3065BFC100C5F7BE /* Sources */,
+				A29D612C3065BFC100C5F7BE /* Frameworks */,
+				A29D612D3065BFC100C5F7BE /* Resources */,
 			);
 			buildRules = (
 			);
+			dependencies = (
+			);
 			fileSystemSynchronizedGroups = (
-				595880B13065BF1400AFEEAD /* Ejercicio2 */,
+				A29D61313065BFC100C5F7BE /* Ejercicio2 */,
 			);
 			name = Ejercicio2;
+			packageProductDependencies = (
+			);
 			productName = Ejercicio2;
-			productReference = 595880AF3065BF1400AFEEAD /* Ejercicio2.app */;
+			productReference = A29D612F3065BFC100C5F7BE /* Ejercicio2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		595880A73065BF1400AFEEAD /* Project object */ = {
+		A29D61273065BFC100C5F7BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2700;
-				LastUpgradeCheck = 2700;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
-					595880AE3065BF1400AFEEAD = {
-						CreatedOnToolsVersion = 27.0;
+					A29D612E3065BFC100C5F7BE = {
+						CreatedOnToolsVersion = 26.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 595880AA3065BF1400AFEEAD /* Build configuration list for PBXProject "Ejercicio2" */;
+			buildConfigurationList = A29D612A3065BFC100C5F7BE /* Build configuration list for PBXProject "Ejercicio2" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 595880A63065BF1400AFEEAD;
+			mainGroup = A29D61263065BFC100C5F7BE;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 595880B03065BF1400AFEEAD /* Products */;
+			productRefGroup = A29D61303065BFC100C5F7BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				595880AE3065BF1400AFEEAD /* Ejercicio2 */,
+				A29D612E3065BFC100C5F7BE /* Ejercicio2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		595880AD3065BF1400AFEEAD /* Resources */ = {
+		A29D612D3065BFC100C5F7BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		595880AB3065BF1400AFEEAD /* Sources */ = {
+		A29D612B3065BFC100C5F7BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		595880C33065BF1600AFEEAD /* Debug configuration for PBXNativeTarget "Ejercicio2" */ = {
+		A29D61433065BFC300C5F7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -147,7 +157,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = fca.Ejercicio2;
+				PRODUCT_BUNDLE_IDENTIFIER = FCA.Ejercicio2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -159,7 +169,7 @@
 			};
 			name = Debug;
 		};
-		595880C43065BF1600AFEEAD /* Release configuration for PBXNativeTarget "Ejercicio2" */ = {
+		A29D61443065BFC300C5F7BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -178,7 +188,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = fca.Ejercicio2;
+				PRODUCT_BUNDLE_IDENTIFIER = FCA.Ejercicio2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -190,7 +200,7 @@
 			};
 			name = Release;
 		};
-		595880C53065BF1600AFEEAD /* Debug configuration for PBXProject "Ejercicio2" */ = {
+		A29D61453065BFC300C5F7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -253,7 +263,7 @@
 			};
 			name = Debug;
 		};
-		595880C63065BF1600AFEEAD /* Release configuration for PBXProject "Ejercicio2" */ = {
+		A29D61463065BFC300C5F7BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -299,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -312,24 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		595880AA3065BF1400AFEEAD /* Build configuration list for PBXProject "Ejercicio2" */ = {
+		A29D612A3065BFC100C5F7BE /* Build configuration list for PBXProject "Ejercicio2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				595880C53065BF1600AFEEAD /* Debug configuration for PBXProject "Ejercicio2" */,
-				595880C63065BF1600AFEEAD /* Release configuration for PBXProject "Ejercicio2" */,
+				A29D61453065BFC300C5F7BE /* Debug */,
+				A29D61463065BFC300C5F7BE /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		595880C23065BF1600AFEEAD /* Build configuration list for PBXNativeTarget "Ejercicio2" */ = {
+		A29D61423065BFC300C5F7BE /* Build configuration list for PBXNativeTarget "Ejercicio2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				595880C33065BF1600AFEEAD /* Debug configuration for PBXNativeTarget "Ejercicio2" */,
-				595880C43065BF1600AFEEAD /* Release configuration for PBXNativeTarget "Ejercicio2" */,
+				A29D61433065BFC300C5F7BE /* Debug */,
+				A29D61443065BFC300C5F7BE /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 595880A73065BF1400AFEEAD /* Project object */;
-	validationLevel = 1;
+	rootObject = A29D61273065BFC100C5F7BE /* Project object */;
 }
