@@ -27,14 +27,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func letraTocada(_ sender: UIButton) {
-        performSegue(withIdentifier: "segueDetalle", sender: sender:sender.currentTitle)
+        print("tocaste", sender.currentTitle ?? "")
+        performSegue(withIdentifier: "segueDetalle", sender:sender)
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? ViewControllerDetalle{
-            vc.titulo = sender as? String
-            
+        print("prepare", segue.identifier ?? "")
+        if let vc = segue.destination as? ViewControllerDetalle,
+            let boton = sender as? UIButton{
+                vc.titulo = boton.currentTitle
         }
     }
 }

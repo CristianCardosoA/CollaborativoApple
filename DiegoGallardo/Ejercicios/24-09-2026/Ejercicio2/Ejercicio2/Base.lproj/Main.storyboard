@@ -32,7 +32,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="tXt-Kb-hRo">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tXt-Kb-hRo">
                                 <rect key="frame" x="0.0" y="172" width="393" height="612"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh2-Wv-qOK">
@@ -40,7 +40,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="A"/>
                                         <connections>
-                                            <segue destination="Dbb-dn-E3J" kind="show" identifier="segueA" id="Yr4-6C-Z4q"/>
+                                            <action selector="letraTocada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnp-xh-M4b"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhU-Z3-4R3">
@@ -48,7 +48,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="B"/>
                                         <connections>
-                                            <segue destination="Dbb-dn-E3J" kind="presentation" identifier="segueB" id="q99-Gz-qWZ"/>
+                                            <action selector="letraTocada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UHr-nR-Mrp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dan-KR-zPS">
@@ -56,7 +56,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="C"/>
                                         <connections>
-                                            <segue destination="Dbb-dn-E3J" kind="show" identifier="segueC" id="v0Y-bd-da3"/>
+                                            <action selector="letraTocada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSe-KR-3tg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1T6-Iz-NWC">
@@ -64,7 +64,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="D"/>
                                         <connections>
-                                            <segue destination="Dbb-dn-E3J" kind="presentation" identifier="segueD" id="kIJ-kx-6eS"/>
+                                            <action selector="letraTocada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zge-v5-uAd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI9-Jd-GoA">
@@ -72,13 +72,17 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="E"/>
                                         <connections>
-                                            <segue destination="Dbb-dn-E3J" kind="show" identifier="segueE" id="fuD-To-Qxy"/>
+                                            <action selector="letraTocada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wpC-D9-Iep"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzs-d3-RKs">
                                 <rect key="frame" x="0.0" y="784" width="393" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="40Y-iI-7CW"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="ZHj-tg-jFE"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <backgroundConfiguration key="background">
@@ -106,6 +110,7 @@
                     <navigationItem key="navigationItem" id="zMC-EJ-jkC"/>
                     <connections>
                         <outlet property="stackLabels" destination="tXt-Kb-hRo" id="Mic-z6-bMg"/>
+                        <segue destination="Dbb-dn-E3J" kind="show" identifier="segueDetalle" id="7fN-lN-CzB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -117,11 +122,11 @@
             <objects>
                 <viewController id="Dbb-dn-E3J" customClass="ViewControllerDetalle" customModule="Ejercicio2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVd-Ww-2ri">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEXTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUa-9Q-OF0">
-                                <rect key="frame" x="16" y="400.33333333333331" width="361" height="51.333333333333314"/>
+                                <rect key="frame" x="16" y="452.33333333333331" width="361" height="51.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" red="0.58625796829999999" green="0.04199566565" blue="0.091854189919999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -146,9 +151,6 @@
             <point key="canvasLocation" x="548.85496183206101" y="105.63380281690141"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="kIJ-kx-6eS"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="scrollViewTexturedBackgroundColor">
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
