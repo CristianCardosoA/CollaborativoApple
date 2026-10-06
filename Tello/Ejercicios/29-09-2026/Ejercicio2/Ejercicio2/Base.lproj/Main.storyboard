@@ -32,11 +32,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="tXt-Kb-hRo">
-                                <rect key="frame" x="0.0" y="172" width="393" height="612"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tXt-Kb-hRo">
+                                <rect key="frame" x="0.0" y="172" width="393" height="596"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh2-Wv-qOK">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="122.33333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="119.33333333333333"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="A"/>
                                         <connections>
@@ -44,7 +44,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhU-Z3-4R3">
-                                        <rect key="frame" x="0.0" y="122.33333333333331" width="393" height="122.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="119.33333333333331" width="393" height="119"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="B"/>
                                         <connections>
@@ -52,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dan-KR-zPS">
-                                        <rect key="frame" x="0.0" y="244.66666666666666" width="393" height="122.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="238.33333333333334" width="393" height="119.33333333333334"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="C"/>
                                         <connections>
@@ -60,7 +60,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1T6-Iz-NWC">
-                                        <rect key="frame" x="0.0" y="367.33333333333337" width="393" height="122.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="357.66666666666663" width="393" height="119"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="D"/>
                                         <connections>
@@ -68,7 +68,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI9-Jd-GoA">
-                                        <rect key="frame" x="0.0" y="489.66666666666657" width="393" height="122.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="476.66666666666657" width="393" height="119.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="E"/>
                                         <connections>
@@ -79,7 +79,10 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzs-d3-RKs">
-                                <rect key="frame" x="0.0" y="784" width="393" height="52"/>
+                                <rect key="frame" x="0.0" y="752" width="393" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="HKC-Ym-kaT"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <backgroundConfiguration key="background">
@@ -96,9 +99,9 @@
                         <constraints>
                             <constraint firstItem="tXt-Kb-hRo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0fh-kb-NdX"/>
                             <constraint firstItem="Lzs-d3-RKs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LmT-eB-moQ"/>
-                            <constraint firstItem="tXt-Kb-hRo" firstAttribute="bottom" secondItem="Lzs-d3-RKs" secondAttribute="top" id="MLG-0r-7hw"/>
+                            <constraint firstItem="tXt-Kb-hRo" firstAttribute="bottom" secondItem="Lzs-d3-RKs" secondAttribute="top" constant="16" id="MLG-0r-7hw"/>
                             <constraint firstAttribute="bottom" secondItem="Lzs-d3-RKs" secondAttribute="bottom" constant="16" id="bma-VL-lC8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tXt-Kb-hRo" secondAttribute="bottom" id="hGf-JP-Puz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tXt-Kb-hRo" secondAttribute="bottom" constant="16" id="hGf-JP-Puz"/>
                             <constraint firstAttribute="trailing" secondItem="Lzs-d3-RKs" secondAttribute="trailing" id="ldq-gb-gyr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tXt-Kb-hRo" secondAttribute="trailing" id="t4H-mG-CQq"/>
                             <constraint firstItem="tXt-Kb-hRo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uhM-da-tZb"/>

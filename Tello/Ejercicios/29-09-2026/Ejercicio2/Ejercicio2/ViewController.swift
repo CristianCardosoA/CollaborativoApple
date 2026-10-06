@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func letraTocada(_ sender: UIButton) {
-        performSegue(withIdentifier: "segueDetalle", sender: sender:sender.currentTitle)
+        performSegue(withIdentifier: "segueDetalle", sender: sender.currentTitle)
     }
     
     
