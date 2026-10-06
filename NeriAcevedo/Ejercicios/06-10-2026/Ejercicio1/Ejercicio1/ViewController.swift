@@ -60,7 +60,7 @@ class ViewController: UIViewController {
         // 3. Solo el stack lleva constraints: él acomoda lo de adentro
         NSLayoutConstraint.activate([
             formStack.topAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
+                equalTo: view.centerYAnchor, constant: -60),
             formStack.leadingAnchor.constraint(
                 equalTo: view.leadingAnchor, constant: 24),
             formStack.trailingAnchor.constraint(
