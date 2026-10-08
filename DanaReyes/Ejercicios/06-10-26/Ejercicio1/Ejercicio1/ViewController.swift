@@ -73,10 +73,7 @@ class ViewController: UIViewController {
             formStack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             formStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
             formStack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
-            //formStack.heightAnchor.constraint(equalTo: view.heightAnchor, constant: -24),
-            
-         //   usernameField.heightAnchor.constraint(equalTo: view.heightAnchor, constant: 44),
-           // loginButton.heightAnchor.constraint(equalTo: view.heightAnchor, constant: 50)
+        
             
             usernameField.heightAnchor.constraint(equalToConstant: 44),
             loginButton.heightAnchor.constraint(equalToConstant: 50)
