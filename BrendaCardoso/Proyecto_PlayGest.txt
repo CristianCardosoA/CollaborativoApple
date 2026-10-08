@@ -1,0 +1,36 @@
+﻿Proyecto: PlayGest Mobile (Sistema de Préstamos para Ludoteca)
+1. Descripción del Proyecto
+Aplicación móvil desarrollada en Swift para iOS orientada a la gestión de inventario y control de préstamos de una ludoteca. Permite a los usuarios autenticarse, consultar un catálogo interactivo con más de 100 elementos de forma dinámica, verificar la disponibilidad de los juegos en tiempo real y realizar solicitudes de préstamo de manera ágil y estructurada.
+
+
+2. Arquitectura y Tecnologías
+* Interfaz de Usuario: SwiftUI / UIKit utilizando NavigationStack.
+
+* Patrón de Diseño: MVVM (Model-View-ViewModel) para separar la lógica de negocio de las vistas.
+
+* Gestión de Datos: Consumo de API REST con URLSession (async/await) o almacenamiento local utilizando SwiftData / CoreData.
+
+3. Estructura de Pantallas (4 Vistas Principales)
+   1. Pantalla de Inicio de Sesión (Login)
+
+      * Interfaz de autenticación con validación de credenciales.
+
+      * Restricción de accesos según el rol del usuario (Administrador / Alumno).
+
+         2. Catálogo Dinámico (Vista Principal de 100+ Elementos)
+
+            * Listado optimizado mediante celdas reutilizables (UITableView / UICollectionView) capaz de desplegar y gestionar más de 100 artículos de la ludoteca.
+
+            * Barra de búsqueda integrada y filtros rápidos por categoría o disponibilidad.
+
+               3. Vista de Detalle del Artículo
+
+                  * Despliegue de información específica del juego seleccionado (imagen ilustrativa, sinopsis, componentes, stock disponible y estado físico).
+
+                  * Botón de acción para iniciar el proceso de apartado o préstamo.
+
+                     4. Formulario de Solicitud y Comprobante
+
+                        * Formulario interactivo con selector de fechas para definir el periodo del préstamo.
+
+                        * Generación automática de un código de acceso único o comprobante digital para la recolección del material.
