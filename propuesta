@@ -1,0 +1,66 @@
+Propuesta de App: Patio
+
+Claim: La red social de tu edificio. Solo tus vecinos. Solo tu comunidad.
+
+Que es Patio
+
+Patio es una red social privada para una unidad habitacional, ya sea edificio, condominio, urbanizacion o barrio cerrado. No es un chat, no es un grupo de WhatsApp, no es un tablon de anuncios. Es una red social completa donde los vecinos publican, comentan, reaccionan, organizan eventos y construyen comunidad, pero solo entre ellos.
+
+El acceso es por invitacion del administrador. Cada persona entra con su unidad, es decir piso y puerta. Nadie de fuera puede ver nada. Nada se comparte hacia afuera.
+
+Problema que resuelve
+
+Los grupos de WhatsApp del edificio son un caos: se pierde todo, se mezcla todo, la gente silencia.
+Los vecinos no se conocen entre si, incluso viviendo a metros.
+No hay un espacio donde publicar cosas cotidianas sin invadir el chat general.
+Las iniciativas comunitarias como juntadas, grupos de running o trueques mueren por falta de organizacion.
+Las redes sociales abiertas como Facebook o Nextdoor no dan privacidad real a una comunidad cerrada.
+
+Como funciona
+
+    El administrador crea la comunidad. Configura el edificio, las unidades y genera un codigo de invitacion unico.
+
+    Cada vecino entra con su unidad. Piso y puerta. Sin exponer nombre completo, telefono ni direccion exacta. Puede elegir un apodo visible solo dentro de la comunidad.
+
+    Feed principal. Publicaciones de vecinos: fotos, textos, preguntas, recomendaciones, avisos. Ordenado por relevancia y cercania temporal, no por algoritmo adictivo.
+
+    Reacciones y comentarios. Reacciones simples como me gusta, me sirve, me identifico, y comentarios. Todo dentro de la comunidad.
+
+    Grupos tematicos internos. Padres y ninos, mascotas, deportes, cocina y recetas, trueques y regalos, seguridad y avisos.
+
+    Eventos comunitarios. Cualquiera puede crear un evento: asado en la terraza, cine en el salon, jornada de limpieza. Con confirmacion de asistencia.
+
+    Mercado vecinal. Publicar cosas para vender, regalar o prestar entre vecinos. Sin comisiones, sin envios.
+
+    Perfil de vecino. Muestra tu unidad de forma opcional, tus intereses y tu participacion. Sin metricas de vanidad, no hay seguidores.
+
+Funcionalidades clave
+
+Comunidad cerrada: solo vecinos verificados por el administrador.
+Perfil por unidad: piso y puerta, con apodo opcional.
+Feed vecinal: publicaciones de la comunidad, sin algoritmo adictivo.
+Comentarios y reacciones: interaccion sin likes vanidosos.
+Grupos tematicos: padres, mascotas, deportes, etc.
+Eventos comunitarios: con confirmacion de asistencia.
+Mercado vecinal: vender, regalar, prestar entre vecinos.
+Avisos oficiales: canal separado del feed general.
+Notificaciones configurables: por grupo y por tipo.
+Sin anuncios, sin tracking, sin datos vendidos: privacidad real.
+Modo administrador: gestion de vecinos, unidades y moderacion.
+
+Publico objetivo
+
+Edificios residenciales de 20 a 300 unidades.
+Condominios y urbanizaciones cerradas.
+Barrios pequenos con identidad propia.
+Comunidades de copropietarios organizadas.
+Vecinos que quieren conocerse mas alla del buenos dias en el ascensor.
+
+Diferenciadores
+
+No es un chat, es una red social completa con feed, perfiles y eventos.
+No es WhatsApp, la informacion no se pierde en la marea de mensajes.
+No es Facebook, no hay algoritmo, no hay anuncios, no hay desconocidos.
+Privada de verdad, nada sale de la comunidad.
+Construye vecindad, fomenta conocer y ayudar a quien vive al lado.
+Sin metricas de vanidad, no hay seguidores, hay participacion.
