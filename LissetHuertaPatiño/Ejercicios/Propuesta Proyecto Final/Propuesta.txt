@@ -1,68 +1,91 @@
-                  PROPUESTA DE PROYECTO FINAL - iOS
+Reestructuracion PROPUESTA DE PROYECTO FINAL - iOS
 
-1. PRESENTACIÓN DEL PROYECTO
+Fue mi culpa al no saber presentar mi idea, asi que la vuelvo apresentar con algunos cambios mejor explicados para que pueda aprobarlos....
+Si decide que aun asi no es suficiente, puedo hacer otra propuesta.
 
-• Proyecto: Asistente de Ahorro y Farmeo para Juegos de Ritmo y Gacha
-• Objetivo Principal: Aplicación para iOS diseñada para ayudar a los jugadores a gestionar sus recursos virtuales (gemas, diamantes, tiradas), calcular si les alcanzará para su personaje o carta deseada (spark / pity) y organizar sus misiones diarias de farmeo entre múltiples juegos.
-• Problema que resuelve: Evita que el usuario tenga que hacer cuentas a mano o usar tablas complejas de Excel para saber cuántas gemas puede reunir antes de que termine un evento o banner especial.
-• Público Objetivo: Jugadores de títulos como Project Sekai: Colorful Stage!, Ensemble Stars!!, BanG Dream!, Genshin Impact, entre otros.
+Título del Proyecto: GachaPlan iOS: Gestor de Metas de Ahorro y Planificador de Recursos para Videojuegos
+Plataforma: iOS
+Entorno de Desarrollo: Xcode, Swift, UIWindowScene, AutoLayout vía código
 
+1. Definición del Modelo de Negocio y Dominio del Problema
 
-2. FUNCIONALIDADES PRINCIPALES
-----------------------------------------------------------------------
-1. Gestión de Perfiles por Juego: Permite llevar el registro de varios juegos de ritmo/gacha al mismo tiempo, manejando el saldo actual de gemas de cada uno.
-2. Planificador de Metas de Ahorro (Spark Target): Configuración de objetivos para cartas o banners futuros (cantidad de gemas necesarias, fecha límite y porcentaje de ahorro alcanzado).
-3. Calculadora de Farmeo Pendiente: Cálculo rápido de gemas acumulables por contenido no completado (canciones jugadas con Full Combo/Full Perfect, historias de personajes leídas, logros pendientes).
-4. Lista de Rutinas Diarias (Daily Checklist): Registro de misiones del día por juego para asegurar que no se pierdan recompensas gratuitas.
-5. Simulador de Tiradas y Probabilidades: Herramienta visual que calcula las probabilidades matemáticas de conseguir la carta deseada con las gemas actuales.
+A. Definición de Juegos con Mecánicas "Gacha"
 
+El término "Gacha" proviene de las máquinas expendedoras mecánicas japonesas (Gachapon), en las que el usuario introduce monedas y gira una perilla para obtener una cápsula con una figura coleccionable de forma aleatoria. En el ámbito del software móvil, los juegos de esta categoría (tales como Genshin Impact, Honkai: Star Rail, Hatsune Miku: Colorful Stage! / Project SEKAI y Ensemble Stars!!) adaptan este modelo sustituyendo la moneda física por monedas virtuales dentro de la aplicación.
 
-3. ARQUITECTURA DE PANTALLAS Y VIEWCONTROLLERS (14 VISTAS)
-----------------------------------------------------------------------
-La navegación principal estará dividida en 5 Pestañas, y cada pestaña utilizará un NavigationController para entrar al detalle de cada sección.
+A diferencia de las compras directas en comercio electrónico, este modelo se basa en la adquisición de oportunidades o "tiradas" en un sistema de probabilidad aleatoria. Dado que los elementos deseados no siempre se obtienen en el primer intento, los usuarios deben acumular grandes cantidades de recursos digitales o realizar microtransacciones con dinero real para asegurar su obtención.
 
-[Pestaña 1]: Mis juegos y metas
+B. Mapeo Financiero: Moneda Real ($ MXN) vs. Moneda Virtual
 
-[Pestaña 2]: Diarias y farmeo
+Para estructurar el seguimiento financiero en la aplicación, el sistema modela la equivalencia entre tres capas de recursos:
 
-[Pestaña 3]: Calculadora de eventos
+1. Dinero Real ($ MXN): Capital en pesos mexicanos invertido o presupuestado por el usuario.
+2. Moneda del Juego (Gemas / Cristales / Diamantes): Recurso digital acumulable que se obtiene mediante recompensas diarias, eventos dentro del juego o compras en la tienda oficial.
+3. Intentos de Obtención ("Pulls" / Tiradas): Cantidad de oportunidades requeridas para alcanzar la garantía de un objetivo (pity system o aseguramiento de personajes).
 
-[Pestaña 4]: Simulador de tiradas       
+Problemática Financiera:
 
-[Pestaña 5]: Perfil y ajustes
+Un objetivo dentro del juego suele requerir una cantidad fija de intentos (por ejemplo, 90 tiradas, equivalentes a 13,500 gemas). Un usuario promedio puede acumular mediante misiones diarias y eventos un aproximado de 3,000 gemas mensuales de forma gratuita. La diferencia restante debe cubrirse con ahorro planificado a lo largo del tiempo o mediante gasto directo en pesos mexicanos. La falta de un cálculo presupuestario previo suele derivar en compras no planificadas e impulsivas. GachaPlan calcula automáticamente el déficit de gemas y proyecta su costo equivalente en pesos mexicanos ($ MXN), permitiendo al usuario tomar decisiones presupuestarias informadas.
 
-PESTAÑA 1: MIS JUEGOS Y METAS DE AHORRO
+---
 
-1. Muestra: Lista con tarjetas visuales de los juegos que sigue el usuario, mostrando la imagen del juego, el saldo actual de gemas y una barra con el progreso general de ahorro.
+2. Indicadores de Mercado y Viabilidad Técnica
 
-2. Muestra: Información del juego elegido: saldo de gemas, meta activa principal y accesos rápidos a sus calculadoras y rutinas.
+La viabilidad y relevancia de esta aplicación se sustentan en el volumen de usuarios y la facturación de la industria de microtransacciones móviles:
 
-3. Muestra: Ilustración de la carta o banner al que se aspira, el total de gemas requeridas para asegurar la carta (pity/spark), días restantes y una barra circular de porcentaje completado.
-
-4. Muestra: Formulario sencillo con campos para seleccionar la carta/banner, ingresar la cantidad de gemas necesarias, la fecha en que llega el banner y subir una imagen personalizada.
+Ingresos Globales: La industria global de juegos con mecánicas de microtransacción y recolección genera ingresos superiores a los $23,000 millones de dólares anuales (fuente: plataformas de inteligencia de mercado como Sensor Tower y AppMagic).
 
 
-PESTAÑA 2: MISIONES DIARIAS Y FARMEO
-5. Muestra: Lista con casillas para marcar las misiones del día (ej. Login diario, jugar 3 canciones, ver show virtual). Al marcar todas las casillas de un juego, la tarjeta se ilumina como "Completada".
-
-6. Muestra: Pantalla para agregar nuevas misiones o borrar las que ya no aplican para un juego en particular.
-
-
-PESTAÑA 3: CALCULADORA DE FARMEO Y EVENTOS
-7. Muestra: Campos interactivos donde el usuario indica cuántas canciones le faltan por sacar Full Combo o Full Perfect (dividido por dificultades: Expert, Master) o cuantas historias de personajes no ha leído. La pantalla calcula automáticamente cuántas gemas tiene disponibles para farmear.
-
-8. Muestra: Línea de tiempo con los banners futuros, sus fechas de inicio/fin y la prioridad asignada por el usuario (Baja, Media, Alta).
+Usuarios Activos Mensuales (MAU):
+Títulos de escala global como Genshin Impact y Honkai: Star Rail registran entre 40 y 50 millones de usuarios activos mensuales en plataformas móviles.
+Títulos focalizados en ritmo y música como Hatsune Miku: Colorful Stage! (PJSK) y Ensemble Stars!! cuentan con una base combinada de 10 a 15 millones de usuarios activos mensuales globalmente.
 
 
-PESTAÑA 4: SIMULACIÓN Y BITÁCORA
-9. Muestra: Simulador interactivo donde pones tu saldo actual y realiza tiradas ficticias para mostrarte tus posibilidades o cuántas tiradas exactas te faltan para llegar al spark.
-
-10. Muestra: Registro histórico de banners pasados donde el usuario anota cuántas gemas gastó y si obtuvo o no la carta que quería.
+Facturación Mensual: Títulos individuales reportan recaudaciones recurrentes de $30M a $50M USD mensuales, mientras que la categoría de juegos de ritmo genera de $5M a $15M USD al mes únicamente por concepto de pases y paquetes digitales.
 
 
-PESTAÑA 5: PERFIL, ESTADÍSTICAS Y CONFIGURACIÓN
-11. Muestra: Estadísticas generales: total de gemas ahorradas a lo largo del tiempo, número de metas alcanzadas con éxito y medallas/logros de uso de la app.
+Oportunidad de Desarrollo: Pese al volumen de usuarios, la planificación presupuestaria se realiza mayoritariamente en hojas de cálculo externas o paginas web descentralizadas. GachaPlan resuelve este problema mediante una aplicación nativa que opera de manera 100% local, privada y optimizada para iOS.
 
-12. Muestra: Opciones para activar/desactivar notificaciones, cambiar el tema visual (colores pastel o modo oscuro) y respaldar la información.
+---
 
-13. Muestra: Pantalla de presentación que aparece la primera vez que se abre la app, explicando brevemente sus funciones principales.
+3. Descripción General del Sistema
+
+GachaPlan es un gestor presupuestario diseñado para la consolidación de gastos en entretenimiento digital. La aplicación permite registrar múltiples juegos o servicios, establecer tasas de conversión entre pesos mexicanos ($ MXN) y gemas/cristales, simular el tiempo requerido para alcanzar metas de ahorro mediante actividades diarias y monitorear el histórico de gastos mensuales en pases de suscripción.
+
+---
+
+4. Arquitectura de Pantallas (11 Vistas Clave)
+
+El sistema se compone de 11 vistas interconectadas y estructuradas a través de un UITabBarController y un UINavigationController:
+
+MÓDULO 1: DASHBOARD
+01. Inicio (Dashboard General)
+    Muestra el resumen general: gemas ahorradas, metas activas y el balance de gasto mensual ($ MXN).
+
+MÓDULO 2: JUEGOS Y PERFILES
+02. Mis Juegos
+    Lista de los juegos configurados (ej. Project SEKAI, Genshin Impact).
+03. Configurar Juego
+    Formulario para ingresar el costo por tirada, tipo de gema o moneda del juego, y la conversión a $ MXN.
+
+MÓDULO 3: METAS Y PROYECCIÓN
+04. Lista de Metas de Ahorro
+    Lista de personajes o cartas deseadas con su fecha límite y barra de progreso de gemas acumuladas.
+05. Calculadora de Proyección
+    Calcula si las gemas gratis diarias y semanales que ganas jugando alcanzan para la meta o si te faltará recurso.
+
+MÓDULO 4: PASES Y FINANZAS
+06. Optimizador de Pases
+    Compara los pases o pases de batalla del juego y te dice cuál te conviene más según las gemas que da.
+07. Registrar Compra
+    Formulario rápido para anotar cuando compras un pase o paquete con dinero real ($ MXN).
+08. Reporte de Gastos
+    Historial de cuánto dinero real has gastado en el mes o por juego.
+
+MÓDULO 5: REGISTROS Y AJUSTES
+09. Registro de Recompensas
+    Pantalla rápida para sumar las gemas gratis que vas ganando por misiones diarias, mantenimiento o eventos.
+10. Historial de Movimientos
+    Bitácora que muestra las entradas (gemas ganadas) y salidas (gemas gastadas o tiradas hechas).
+11. Ajustes y Datos
+    Configuración de la app, cambio de moneda ($ MXN / $ USD) y borrado de datos locales (UserDefaults / CoreData).
