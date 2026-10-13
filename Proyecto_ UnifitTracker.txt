@@ -1,0 +1,20 @@
+﻿Proyecto: UniFit Tracker (App de Rutinas y Entrenamientos)
+1. Descripción del Proyecto
+Aplicación móvil desarrollada nativamente en Swift para iOS, diseñada para gestionar rutinas de ejercicio, registrar entrenamientos y llevar el control de marcas personales de forma 100% local. El sistema procesa interacciones en tiempo real, actualiza un catálogo precargado de 50 ejercicios con búsquedas instantáneas y almacena la información de manera segura en el dispositivo.
+2. Arquitectura y Tecnologías
+* Interfaz Reactiva: SwiftUI para una actualización fluida de la interfaz de usuario.
+* Patrón de Diseño: MVVM (Model-View-ViewModel) para separar la lógica de negocio de las vistas.
+* Persistencia Local: Uso de SwiftData (o CoreData) y archivos JSON locales para el almacenamiento offline de los 50 elementos del catálogo y el historial de usuario.
+3. Estructura de Pantallas (4 Vistas Principales)
+1. Dashboard de Actividad (Pantalla Principal)
+   * Resumen dinámico del rendimiento semanal y estadísticas de entrenamiento.
+   * Accesos directos a las rutinas activas y registro rápido de marcas personales.
+2. Catálogo de Ejercicios
+   * Explorador optimizado con celdas reutilizables que despliega los 50 ejercicios precargados.
+   * Buscador en tiempo real y filtros reactivos por grupo muscular (pecho, pierna, espalda, etc.) y nivel de dificultad.
+3. Vista de Detalle del Ejercicio
+   * Información específica del movimiento seleccionado (instrucciones técnicas, músculos implicados y consejos).
+   * Historial de rendimiento local asociado a ese ejercicio específico.
+4. Formulario y Cronómetro de Rutina Activa
+   * Módulo interactivo para registrar series, repeticiones y pesos levantados en tiempo real.
+   * Guardado automático de los datos en la base de datos local al finalizar el entrenamiento.
