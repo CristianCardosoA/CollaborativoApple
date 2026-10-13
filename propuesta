@@ -2,6 +2,8 @@
 Propuesta de App: Huerto
 ==================================================
 
+nota: hacer que haya un respaldo en un servidor y que se suban las fotos
+
 Claim: Tu huerto, en orden. Sin nube, sin cuentas, sin servidores.
 
 Que es Huerto
@@ -42,7 +44,7 @@ Las fotos se guardan en el almacenamiento interno privado de la app, no en la ga
 
 Notificaciones
 
-Las notificaciones se programan con el sistema de notificaciones local del sistema operativo. En Android se usa WorkManager o AlarmManager para programar recordatorios que se disparan aunque la app esté cerrada. En iOS se usa UserNotifications framework con notificaciones locales programadas. No hay servidor que envíe push. Todo se calcula en el teléfono a partir del historial de riego del usuario.
+Las notificaciones se programan con el sistema de notificaciones local del sistema operativo. En iOS se usa UserNotifications framework con notificaciones locales programadas. No hay servidor que envíe push. Todo se calcula en el teléfono a partir del historial de riego del usuario.
 
 Motor de avisos adaptativos
 
@@ -53,10 +55,6 @@ Cifrado de backup
 El backup manual genera un archivo único con extensión .huerto. Ese archivo contiene la base de datos y las fotos empaquetadas. Se cifra con AES-256 en modo GCM usando una clave derivada de la contraseña maestra con Argon2id. El archivo resultante se guarda donde el usuario elija, ya sea almacenamiento interno, tarjeta SD, USB o su propio servicio de nube personal. La app no sube nada por su cuenta.
 
 Sin telemetría ni analytics
-
-Distribución
-
-La app se distribuye como APK directo, en Play Store, en App Store y en F-Droid. Al no tener backend, no hay costos de servidor ni dependencia de servicios externos. La app funciona igual en un teléfono sin SIM, sin wifi y en modo avión.
 
 Funcionalidades clave
 
@@ -95,13 +93,12 @@ Stack sugerido
 
 Framework: Flutter o React Native para una sola base de código en Android y iOS.
 Base de datos: SQLite con SQLCipher para cifrado en reposo.
-Cifrado de backup: AES-256 en modo GCM, con Argon2id para derivación de clave.
-Almacén de claves: Android Keystore y iOS Keychain.
-Notificaciones: WorkManager y AlarmManager en Android, UserNotifications en iOS.
-Fotos: almacenamiento interno privado de la app, cifrado individual si hay contraseña maestra.
+Almacén de claves: iOS Keychain.
+Notificaciones: UserNotifications en iOS.
+Fotos: almacenamiento interno privado de la app, cifrado individual si hay contraseña maestra. //cambiar a que sea en servidor
 Generación de PDF: librería local offline, sin llamadas a servicios externos.
 Sin backend, sin nube, sin telemetría.
-Distribución: Play Store, App Store, APK directo, F-Droid.
+Distribución: App Store
 
 Estructura de datos local
 
