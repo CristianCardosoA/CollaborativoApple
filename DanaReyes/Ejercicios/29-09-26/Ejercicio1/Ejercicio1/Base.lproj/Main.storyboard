@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fSM-0V-WOX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="T50-Df-pFD">
+            <objects>
+                <navigationController id="fSM-0V-WOX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vkg-Vl-deL">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uMb-g1-snA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jLq-yq-eJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-898" y="95"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ejercicio2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l2G-sV-mxg">
+                                <rect key="frame" x="0.0" y="172" width="393" height="612"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAH-8l-9qP">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="114.33333333333333"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="A"/>
+                                        <connections>
+                                            <segue destination="3eO-9A-5iE" kind="show" identifier="segueA" id="PUf-hy-2GN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgN-Np-wZL">
+                                        <rect key="frame" x="0.0" y="124.33333333333331" width="393" height="114.33333333333331"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="B"/>
+                                        <connections>
+                                            <segue destination="3eO-9A-5iE" kind="show" identifier="segueB" id="2LK-g4-may"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLx-CJ-7Wr">
+                                        <rect key="frame" x="0.0" y="248.66666666666666" width="393" height="114.66666666666666"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="C"/>
+                                        <connections>
+                                            <segue destination="3eO-9A-5iE" kind="show" identifier="segueC" id="mVp-2c-JCl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3As-gl-TDH">
+                                        <rect key="frame" x="0.0" y="373.33333333333337" width="393" height="114.33333333333331"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="D"/>
+                                        <connections>
+                                            <segue destination="3eO-9A-5iE" kind="popoverPresentation" identifier="segueD" popoverAnchorView="3As-gl-TDH" id="0TR-BH-Ceg">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLF-hR-fWh">
+                                        <rect key="frame" x="0.0" y="497.66666666666657" width="393" height="114.33333333333331"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="E"/>
+                                        <connections>
+                                            <segue destination="3eO-9A-5iE" kind="presentation" identifier="segueE" id="gSg-om-n7H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsf-6S-1ot">
+                                <rect key="frame" x="65" y="792.66666666666663" width="262" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button">
+                                    <color key="baseBackgroundColor" red="0.13347656249999995" green="0.13347656249999995" blue="0.13347656249999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RQL-xt-Z97"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.60163548602480454" green="0.77460199961083498" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l2G-sV-mxg" secondAttribute="trailing" id="5th-j2-pW7"/>
+                            <constraint firstAttribute="trailing" secondItem="qsf-6S-1ot" secondAttribute="trailing" constant="66" id="Biw-Vr-JGu"/>
+                            <constraint firstItem="qsf-6S-1ot" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="65" id="EQM-9X-AMC"/>
+                            <constraint firstAttribute="bottom" secondItem="qsf-6S-1ot" secondAttribute="bottom" constant="25" id="PGc-uY-AZF"/>
+                            <constraint firstItem="l2G-sV-mxg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QbY-kE-oRp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l2G-sV-mxg" secondAttribute="bottom" id="fUH-6Z-zg0"/>
+                            <constraint firstItem="l2G-sV-mxg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m8z-b5-pQ0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ax3-fd-emh"/>
+                    <connections>
+                        <outlet property="stackLabels" destination="l2G-sV-mxg" id="gak-Km-okI"/>
+                        <segue destination="3eO-9A-5iE" kind="show" identifier="segueDetalle" id="JYa-5o-GkR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-112" y="86"/>
+        </scene>
+        <!--View Controller Detalles-->
+        <scene sceneID="nTk-Eu-vB6">
+            <objects>
+                <viewController id="3eO-9A-5iE" customClass="ViewControllerDetalles" customModule="Ejercicio2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nit-ay-FgB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEXTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9v-MZ-6p7">
+                                <rect key="frame" x="16" y="394.33333333333331" width="361" height="63.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="53"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c3S-Cw-c3Z"/>
+                        <color key="backgroundColor" red="0.72428357718510139" green="0.86292480579643405" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S9v-MZ-6p7" firstAttribute="centerY" secondItem="nit-ay-FgB" secondAttribute="centerY" id="Bsc-DJ-R7U"/>
+                            <constraint firstItem="S9v-MZ-6p7" firstAttribute="centerX" secondItem="nit-ay-FgB" secondAttribute="centerX" id="S7i-pN-KVf"/>
+                            <constraint firstItem="S9v-MZ-6p7" firstAttribute="leading" secondItem="c3S-Cw-c3Z" secondAttribute="leading" constant="16" id="SIF-Yx-VdD"/>
+                            <constraint firstItem="c3S-Cw-c3Z" firstAttribute="trailing" secondItem="S9v-MZ-6p7" secondAttribute="trailing" constant="16" id="Ybe-Fr-Bnq"/>
+                            <constraint firstItem="S9v-MZ-6p7" firstAttribute="centerX" secondItem="c3S-Cw-c3Z" secondAttribute="centerX" id="nHw-gu-H0x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fCR-xP-PBb"/>
+                    <connections>
+                        <outlet property="labelDetalle" destination="S9v-MZ-6p7" id="oTb-OR-fam"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Uc-DU-hWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922.90076335877859" y="85.91549295774648"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JYa-5o-GkR"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
