@@ -8,8 +8,6 @@ Que es Huerto
 
 Huerto es una app 100 por ciento local para llevar el registro de un huerto urbano, un jardín o plantas de interior. Vive solo en tu teléfono. No necesita internet, no pide cuenta, no sube nada a ningún lado. Anotas qué plantaste, cuándo, cuánto regaste, cómo creció, y la app te avisa cuándo toca regar, trasplantar o cosechar según tu propio historial.
 
-Todo el funcionamiento ocurre dentro del dispositivo. No hay backend, no hay API remota, no hay sincronización con ningún servicio. La app se instala, se usa y se respalda manualmente si el usuario quiere. Nada sale del teléfono salvo que el usuario decida exportarlo.
-
 Problema que resuelve
 
 La gente que tiene plantas en casa olvida cuándo regó, cuándo trasplantó o qué variedad sembró.
@@ -55,8 +53,6 @@ Cifrado de backup
 El backup manual genera un archivo único con extensión .huerto. Ese archivo contiene la base de datos y las fotos empaquetadas. Se cifra con AES-256 en modo GCM usando una clave derivada de la contraseña maestra con Argon2id. El archivo resultante se guarda donde el usuario elija, ya sea almacenamiento interno, tarjeta SD, USB o su propio servicio de nube personal. La app no sube nada por su cuenta.
 
 Sin telemetría ni analytics
-
-La app no incluye ningún SDK de analytics, crash reporting ni publicidad. No hay llamadas de red salientes. No se recopila ningún dato. No hay identificadores de dispositivo ni de usuario. La app no pide permisos de internet. En Android, el manifiesto no declara el permiso INTERNET. En iOS, no se usan APIs de red.
 
 Distribución
 
