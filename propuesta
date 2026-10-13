@@ -117,19 +117,19 @@ Todas las tablas viven en el mismo archivo SQLite cifrado. No hay tablas remotas
 
 Roadmap inicial
 
-Fase 1, MVP, 4 semanas:
+Fase 1:
 Creación de plantas con ficha y foto.
 Registro de eventos con fecha y nota.
 Vista de línea de tiempo por planta.
 Todo local, sin backup todavía.
 
-Fase 2, 2 meses:
+Fase 2:
 Avisos adaptativos de riego con notificaciones locales.
 Calendario de siembra por especie con datos incluidos.
 Backup manual cifrado.
 Búsqueda y filtros por planta.
 
-Fase 3, 4 meses:
+Fase 3:
 Diario de crecimiento con fotos comparativas.
 Múltiples huertos o ubicaciones.
 Exportar a PDF cifrado.
