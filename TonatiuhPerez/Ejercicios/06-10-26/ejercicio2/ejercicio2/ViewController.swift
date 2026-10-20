@@ -64,7 +64,7 @@ class ViewController: UIViewController {
             formStack.centerXAnchor.constraint(
                 equalTo: view.centerXAnchor),
             formStack.widthAnchor.constraint(
-                equalToConstant: 300 ),
+                equalToConstant: 300),
             loginButton.heightAnchor.constraint(
                 equalToConstant: 48),
             formStack.centerYAnchor.constraint(
