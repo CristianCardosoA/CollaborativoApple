@@ -1,0 +1,115 @@
+**Sistema de Puntos de Formación Humanística**
+Universidad Nacional Autónoma de México — Facultad de Contaduría y Administración
+
+## 1. Introducción
+
+**Puntos Culturales** es una aplicación móvil que digitaliza el *Sistema de Puntos de Formación Humanística* de la FCA-UNAM. Permite a las y los estudiantes consultar las actividades culturales, deportivas y de responsabilidad social disponibles, preinscribirse a ellas, y llevar el control de los puntos obtenidos a lo largo de su formación, junto con la descarga de sus constancias.
+
+Esta propuesta plantea el desarrollo de una aplicación nativa para **iOS utilizando Swift**, apoyada en un **servidor propio (físico o en la nube)** que expone una API y resguarda la información de las personas usuarias y de las actividades.
+
+## 2. Justificación
+
+- El sistema web institucional (`spuntos.fca.unam.mx`) no cuenta con una experiencia móvil optimizada para iOS.
+- Una porción relevante del alumnado utiliza iPhone; una app nativa mejora la accesibilidad, el rendimiento y la experiencia de uso.
+- Contar con un servidor propio da control total sobre los datos, las reglas de negocio y la seguridad, sin depender de servicios de terceros.
+- Es una oportunidad para aplicar arquitectura **MVVM**, **SwiftUI** y buenas prácticas de desarrollo móvil nativo conectado a una API REST.
+
+## 3. Objetivos
+
+### 3.1 Objetivo general
+
+Desarrollar una aplicación nativa para iOS en Swift que permita a las y los estudiantes de la FCA-UNAM consultar actividades de formación humanística, preinscribirse, y dar seguimiento a sus puntos y constancias, con autenticación y almacenamiento en un servidor propio.
+
+### 3.2 Objetivos específicos
+
+1. Implementar registro e inicio de sesión con validación de campos contra la API del servidor.
+2. Guardar y recuperar el perfil del alumno (nombre, número de cuenta, etc.) en la base de datos del servidor.
+3. Mostrar el catálogo de actividades disponibles consumido desde la API y su pantalla de detalle.
+4. Calcular y mostrar el historial de puntos por categoría, con sus totales.
+5. Implementar el flujo de recuperación de contraseña y el cierre de sesión.
+6. Garantizar una interfaz adaptable a distintos tamaños de iPhone y compatible con modo claro/oscuro.
+
+## 4. Alcance y funcionalidades
+
+### 4.1 Módulo de acceso (Onboarding)
+- **Inicio de sesión** con correo y contraseña (validación de formato y longitud).
+- **Registro** de nuevo usuario (correo, contraseña y confirmación).
+- **Datos personales**: nombre, apellidos, usuario, teléfono, número de cuenta y fecha de nacimiento, almacenados en el servidor.
+- **Recuperación de contraseña** por correo.
+
+### 4.2 Módulo principal (navegación por pestañas)
+- **Actividades**: lista de actividades disponibles (título, fecha, hora, lugar, categoría y puntos) con opción de preinscripción.
+- **Detalle de actividad**: información completa de la actividad seleccionada.
+- **Historial**: resumen de "Mis puntos" por categoría y total, más la lista de actividades asistidas con descarga de constancia.
+- **Cuenta**: información del perfil del usuario (leída del servidor) y cierre de sesión.
+
+### 4.3 Categorías de puntos
+- Arte y cultura
+- Género, derechos humanos y responsabilidad social
+- Deporte y autocuidado
+
+### 4.4 Fuera de alcance (primera versión)
+- Pagos o trámites administrativos.
+- Notificaciones push.
+- Panel administrativo.
+
+## 5. Público objetivo
+
+Estudiantes y personas egresadas de la FCA-UNAM (modalidad escolarizada y SUAyED) que utilizan dispositivos iPhone y participan en el programa de Formación Humanística.
+
+## 6. Arquitectura y tecnologías
+
+### 6.1 Stack tecnológico
+
+**Aplicación móvil (iOS / Swift):**
+
+| Área | Tecnología propuesta |
+|---|---|
+| Lenguaje | Swift 5.9+ |
+| Interfaz de usuario | SwiftUI |
+| Arquitectura | MVVM (Model–View–ViewModel) |
+| Navegación | `NavigationStack` + `TabView` |
+| IDE | Xcode |
+| Versión mínima | iOS 16 |
+| Consumo de la API | `URLSession` + `Codable` (alternativa: Alamofire) |
+| Manejo de sesión | Token de autenticación (p. ej. JWT) guardado de forma segura en Keychain |
+| Carga de imágenes | `AsyncImage` (alternativa: Kingfisher) |
+| Gestión de dependencias | Swift Package Manager (SPM) |
+| Control de versiones | Git + GitHub |
+
+**Servidor (físico o en la nube):**
+
+| Área | Tecnología propuesta |
+|---|---|
+| Hospedaje | Servidor físico propio o instancia en la nube (VPS / proveedor cloud) |
+| API | API REST con formato JSON |
+| Backend | Node.js (Express) — alternativas: Python (Django/Flask) o PHP (Laravel) |
+| Base de datos | Relacional: PostgreSQL o MySQL |
+| Autenticación | Correo + contraseña (con *hash*), emisión de token de sesión (JWT) |
+| Seguridad | Conexión cifrada por HTTPS (TLS) |
+
+
+## 7. Modelo de datos
+
+**Tabla `usuarios` (base de datos del servidor):**
+
+| Campo | Tipo | Descripción |
+|---|---|---|
+| `id` | Entero / UUID | Identificador del usuario |
+| `firstName` | Texto | Nombre |
+| `lastName` | Texto | Apellidos |
+| `userName` | Texto | Nombre de usuario |
+| `phone` | Texto | Teléfono |
+| `accountNumber` | Texto | Número de cuenta |
+| `birthDate` | Fecha | Fecha de nacimiento |
+| `email` | Texto | Correo electrónico |
+| `passwordHash` | Texto | Contraseña cifrada (hash) |
+
+**Tabla `actividades`:**
+
+| Campo | Tipo |
+|---|---|
+| `id` | Entero / UUID |
+| `titulo`, `fecha`, `hora`, `lugar`, `categoria`, `descripcion` | Texto |
+| `puntos` | Entero |
+

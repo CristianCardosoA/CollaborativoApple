@@ -61,14 +61,23 @@ class ViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             
+<<<<<<< HEAD
             formStack.centerXAnchor.constraint(
                 equalTo: view.centerXAnchor),
             formStack.widthAnchor.constraint(
                 equalToConstant: 300),
             loginButton.heightAnchor.constraint(
                 equalToConstant: 48),
+=======
+>>>>>>> 97e42f1a58939f5817def31bcbd85c2872a16942
             formStack.centerYAnchor.constraint(
-                equalTo: view.centerYAnchor)
+                equalTo: view.centerYAnchor),
+            formStack.leadingAnchor.constraint(
+                equalTo: view.leadingAnchor, constant: 32),
+            loginButton.trailingAnchor.constraint(
+                equalTo: view.trailingAnchor, constant: -32),
+            formStack.heightAnchor.constraint(
+                equalToConstant: 46)
         
         ])
         
