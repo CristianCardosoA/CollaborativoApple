@@ -1,0 +1,47 @@
+======================================================================
+PROPUESTA DE PROYECTO DE DESARROLLO MÓVIL (iOS)
+======================================================================
+
+1. DEFINICIÓN DEL DOMINIO Y JUSTIFICACIÓN TÉCNICA
+
+A. Descripción General del Sistema
+RhythmEngine es una aplicación móvil interactiva inspirada en plataformas de ritmo comunitarias (tales como Sonolus, osu! y Project SEKAI). El sistema permite importar archivos de audio locales en formatos estándar (.mp3, .wav), procesar y reproducir listas de notas (charts/beatmaps) sincronizadas a frecuencias de actualización de alta velocidad (60/120 FPS), y ofrece una interfaz de grabación/edición en tiempo real para la creación de nuevos mapas de ritmo.
+
+
+1. Cálculo preciso del tiempo transcurrido utilizando relojes del sistema de alta resolución (CACurrentMediaTime()) para garantizar que las notas musicales caigan exactamente en el milisegundo correcto.
+2. Control de reproducción, aceleración, pausas y análisis de metadatos mediante la librería nativa AVFoundation.
+3. Uso de Bucles de Renderizado (CADisplayLink) sincronizados con la tasa de refresco nativa de la pantalla del iPhone (60Hz / 120Hz ProMotion) para evitar tirones (stuttering) o desfases visuales.
+4. Estructuración de archivos de mapas de ritmo en formato .json serializable mediante el protocolo Codable para almacenar coordenadas de notas, velocidades y tiempos de impacto.
+
+3. ARQUITECTURA DE PANTALLAS (12 VISTAS CLAVE EN SWIFT PURO)
+
+MÓDULO 1: PRINCIPAL Y BIBLIOTECA
+01. Menú Principal (Home)
+    Pantalla de inicio con acceso rápido a modos de juego, biblioteca, editor y estadísticas globales.
+02. Biblioteca de Canciones
+    Listado interactivo de pistas locales disponibles usando UITableView con buscador e indicador de dificultad.
+03. Importador de Audio
+    Interfaz para seleccionar e importar archivos de música local (.mp3 / .wav) mediante UIDocumentPickerViewController.
+
+MÓDULO 2: MOTOR DE JUEGO (GAMEPLAY)
+04. Selección de Dificultad y Velocidad
+    Pantalla de preparación previa para ajustar la velocidad de caída de notas (Scroll Speed), volumen y desplazamiento de audio (Offset).
+05. Pantalla de Juego (Gameplay Engine)
+    Vista Principal de Juego: Renderizado a 60/120 FPS con CADisplayLink, detección de toques en carriles, evaluación de precisión (PERFECT, GREAT, MISS) y reproducción de audio con AVFoundation.
+06. Resultados y Métricas
+    Resumen detallado al finalizar la canción: puntuación total, porcentaje de precisión, combo máximo y gráfico vectorial de distribución de toques.
+
+MÓDULO 3: EDITOR DE MAPAS
+07. Estudio / Selección de Pista a Editar
+    Vista para elegir una canción de la biblioteca e iniciar un nuevo proyecto de mapa de ritmo.
+08. Editor de Mapas en Tiempo Real
+    Interfaz de Edición / Grabación: Permite colocar notas manualmente sobre una línea de tiempo o grabarlas en vivo tocando los botones al ritmo de la música.
+
+
+MÓDULO 4: PERFIL Y AJUSTES
+9. Mis Creaciones y Mapas Guardados
+    Galería en UICollectionView para gestionar, editar o eliminar los mapas de ritmo creados por el usuario.
+10. Ajustes de Audio y Sincronización
+    Herramienta de calibración de latencia de audio/pantalla y prueba de feedback háptico (UIImpactFeedbackGenerator).
+11. Gestión de Datos Locales
+    Administración de espacio de almacenamiento, exportación/importación de proyectos en JSON y reinicio de puntuaciones locales.

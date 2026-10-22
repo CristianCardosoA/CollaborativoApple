@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "337CB278-5A7D-4741-A9EA-28E729C280A5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDD0ED0C-3CF2-4552-9E41-B06B2246CEE9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ejercicio1/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "DDD0ED0C-3CF2-4552-9E41-B06B2246CEE9 - cc58aa54de3cda29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ejercicio1.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Ejercicio1.ViewController"
+                  moduleName = "Ejercicio1.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/facultaddecontaduriayadministracion/Documents/CollaborativoApple/DiegoGallardo/Ejercicios/01-10-2026/Ejercicio1/Ejercicio1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10">
+               </Location>
+               <Location
+                  uuid = "DDD0ED0C-3CF2-4552-9E41-B06B2246CEE9 - 103d815e1a81c2f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ejercicio1.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Ejercicio1.ViewController&gt;"
+                  moduleName = "Ejercicio1.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/facultaddecontaduriayadministracion/Documents/CollaborativoApple/DiegoGallardo/Ejercicios/01-10-2026/Ejercicio1/Ejercicio1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10">
+               </Location>
+               <Location
+                  uuid = "DDD0ED0C-3CF2-4552-9E41-B06B2246CEE9 - 1ef699a8846a57f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ejercicio1.ViewController.__isolated_deallocating_deinit"
+                  moduleName = "Ejercicio1.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/facultaddecontaduriayadministracion/Documents/CollaborativoApple/DiegoGallardo/Ejercicios/01-10-2026/Ejercicio1/Ejercicio1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10">
+               </Location>
+               <Location
+                  uuid = "DDD0ED0C-3CF2-4552-9E41-B06B2246CEE9 - 7bf628b9abd05636"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ejercicio1.ViewController.__deallocating_deinit"
+                  moduleName = "Ejercicio1.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/facultaddecontaduriayadministracion/Documents/CollaborativoApple/DiegoGallardo/Ejercicios/01-10-2026/Ejercicio1/Ejercicio1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10">
+               </Location>
+               <Location
+                  uuid = "DDD0ED0C-3CF2-4552-9E41-B06B2246CEE9 - c543b6ebc92b645c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ejercicio1.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Ejercicio1.ViewController"
+                  moduleName = "Ejercicio1.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/facultaddecontaduriayadministracion/Documents/CollaborativoApple/DiegoGallardo/Ejercicios/01-10-2026/Ejercicio1/Ejercicio1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12">
+               </Location>
+               <Location
+                  uuid = "DDD0ED0C-3CF2-4552-9E41-B06B2246CEE9 - 317e5e82f0adabcf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ejercicio1.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Ejercicio1.ViewController&gt;"
+                  moduleName = "Ejercicio1.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/facultaddecontaduriayadministracion/Documents/CollaborativoApple/DiegoGallardo/Ejercicios/01-10-2026/Ejercicio1/Ejercicio1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
